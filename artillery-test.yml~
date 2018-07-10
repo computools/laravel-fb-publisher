@@ -1,0 +1,17 @@
+config:
+  target: 'http://laravel.zp.ua/api'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  defaults:
+    headers:
+      Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sYXJhdmVsLnpwLnVhXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTI1MTY4MzY5LCJleHAiOjE1MjUxNzkxNjksIm5iZiI6MTUyNTE2ODM2OSwianRpIjoiaUxVTHgweXJSOEtJWlRaUyIsInN1YiI6MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V_dlLweF1HO7BW2Gclmas7z9jMuABB7CzaIycjWFMYU'
+scenarios:
+  - flow:
+    - post:
+        url: "/post"
+	json:
+	  title: test
+	  content: test=
+	
+
